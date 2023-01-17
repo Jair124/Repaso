@@ -4,14 +4,12 @@
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
 }
-
 body{
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -24,13 +22,11 @@ body{
     animation: fade-out 2s forwards 1;
     pointer-events: none;
 }
-
 @keyframes fade-out {
     to{ 
         opacity: 0;
     }
 }
-
 .left-side {
     width: 15vw;
     height: 100%;
@@ -39,7 +35,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 .logo {
     text-transform: uppercase;
     font-weight: 700;
@@ -50,30 +45,25 @@ body{
     transform: rotate(-90deg);
     user-select: none;
 }
-
 .sm-product {
     width: 100%;
     height: auto;
 }
-
 .product-index {
     font-size: 2vw;
     text-align: center;
 }
-
 .sm-product-img-container {
     position: relative;
     margin: .5vw 0;
     height: 15vw;
     overflow: hidden;
 }
-
 .sm-product-img {
     width: 100%;
     height: 15vw;
     object-fit: cover;
 }
-
 .sm-product-des {
     text-align: right;
     padding: 0.5vw;
@@ -81,14 +71,12 @@ body{
     font-size: 1vw;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .social-link {
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .social-link-img {
     width: 1.6vw;
     height: 1.6vw;
@@ -96,7 +84,7 @@ body{
     cursor: pointer;
 }
 
-.right-side{
+.right-side {
     width: 85vw;
     height: 100vw;
     position: relative;
@@ -105,8 +93,8 @@ body{
     justify-content: center;
 }
 
-.backdrop-img{
-    width: 25%;
+.backdrop-img {
+    width: 25vw;
     height: 100%;
     position: absolute;
     top: 0;
@@ -116,18 +104,18 @@ body{
     user-select: none;
 }
 
-.content{
+.content {
     width: 80%;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.product-detail{
-    width: 60%;
+.product-detail {
+    width: 60;
 }
 
-.product-name{
+.product-name {
     font-size: 8vw;
     text-transform: capitalize;
     font-family: 'Sirin Stencil', cursive;
@@ -135,22 +123,22 @@ body{
     line-height: 9vw;
 }
 
-.product-des{
+.product-des {
     margin: 4vw 0;
     width: 90%;
     font-size: 1.2vw;
     line-height: 2vw;
-    color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.buy-btn{
+.buy-btn {
     text-decoration: none;
-    color: black;
+    color: #000;
     text-transform: capitalize;
     font-size: 1.2vw;
 }
 
-.next-btn{
+.nxt-btn {
     border: none;
     background: none;
     display: flex;
@@ -161,42 +149,41 @@ body{
     user-select: none;
 }
 
-.next-btn img{
+.nxt-btn img {
     width: 60%;
-
 }
 
-.product-img-container{
+.product-img-container {
     width: 40%;
     height: 40vw;
     position: relative;
     overflow: hidden;
 }
 
-.product-img{
+.product-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.slide::before{
+.slide::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
-    width: 100;
+    width: 100%;
     height: 100%;
     background: #000;
     animation: slide-left 1s linear 1;
 }
 
-@keyframes slide-left{
+@keyframes slide-left {
     to{
         left: 100%;
     }
 }
 
-.fade{
+.fade {
     pointer-events: none;
     animation: fade 1s forwards 1;
 }
@@ -207,7 +194,5 @@ body{
     }
     45%, 60% {
         opacity: 0;
-    }
+    } 
 }
-
-
